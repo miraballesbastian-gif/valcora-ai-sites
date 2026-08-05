@@ -186,7 +186,7 @@ function Index() {
       >
         <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 sm:px-6 lg:py-4">
           <a href="#top" className="flex min-w-0 items-center gap-2.5">
-            <img src={logo.url} alt="Valcora Studio" className="h-9 w-9 shrink-0 object-contain sm:h-10 sm:w-10" />
+            <img src={logo.url} alt="Valcora Studio" className="h-9 w-9 shrink-0 object-contain mix-blend-multiply sm:h-10 sm:w-10" />
             <span className="truncate font-display text-base font-bold tracking-tight sm:text-lg">
               Valcora <span className="text-muted-foreground font-medium">Studio</span>
             </span>
@@ -221,7 +221,7 @@ function Index() {
       <section id="top" className="grain-bg relative overflow-hidden px-4 pb-20 pt-32 sm:px-6 lg:pb-32 lg:pt-44">
         <div className="mx-auto max-w-5xl text-center">
           <Reveal>
-            <img src={logo.url} alt="Valcora Studio" className="mx-auto h-24 w-auto object-contain sm:h-32" />
+            <img src={logo.url} alt="Valcora Studio" className="mx-auto h-28 w-auto object-contain mix-blend-multiply sm:h-36" />
           </Reveal>
           <Reveal delay={90}>
             <span className="mt-2 inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-muted-foreground">
@@ -493,7 +493,7 @@ function Index() {
       <footer className="border-t border-border px-4 py-12 sm:px-6">
         <div className="mx-auto grid max-w-7xl gap-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center">
           <div className="flex min-w-0 items-center gap-3">
-            <img src={logo.url} alt="Valcora Studio" className="h-10 w-10 shrink-0 object-contain" />
+            <img src={logo.url} alt="Valcora Studio" className="h-10 w-10 shrink-0 object-contain mix-blend-multiply" />
             <div className="min-w-0">
               <p className="font-display font-bold">Valcora Studio</p>
               <p className="flex items-center gap-1.5 text-sm text-muted-foreground">
