@@ -15,8 +15,8 @@ import { Reveal } from "@/components/Reveal";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
 import logo from "@/assets/valcora-logo.png.asset.json";
-import refugioVideo from "@/assets/Refugio-verde-demo.mp4.asset.json";
-import costaVideo from "@/assets/Hotel-costa-serena-demo.mp4.asset.json";
+import refugioVideo from "@/assets/Refugio-Verde-Final.mp4.asset.json";
+import costaVideo from "@/assets/Hotel-CostaSerena-Final.mp4.asset.json";
 import fuegoVideo from "@/assets/Fuego-urbano-demo.mp4.asset.json";
 
 const WA_MSG = "Hola, quiero más información sobre los planes de Valcora Studio";
