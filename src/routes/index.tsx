@@ -146,7 +146,7 @@ function LaptopMockup({ src, label }: { src: string; label: string }) {
             playsInline
             preload="metadata"
             aria-label={`Demo del sitio ${label}`}
-            className="h-full w-full object-contain"
+            className="h-full w-full object-cover"
           />
         </div>
       </div>
