@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Valcora Studio — Sitios web con IA para pymes en Uruguay" },
+      { name: "description", content: "Estudio freelance en Melo, Cerro Largo. Diseñamos sitios web profesionales, rápidos y a medida para pequeñas y medianas empresas uruguayas." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Valcora Studio — Sitios web con IA para pymes en Uruguay" },
+      { property: "og:description", content: "Estudio freelance en Melo, Cerro Largo. Diseñamos sitios web profesionales, rápidos y a medida para pequeñas y medianas empresas uruguayas." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Valcora Studio — Sitios web con IA para pymes en Uruguay" },
+      { name: "twitter:description", content: "Estudio freelance en Melo, Cerro Largo. Diseñamos sitios web profesionales, rápidos y a medida para pequeñas y medianas empresas uruguayas." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/168cee28-fd5f-4723-b550-1ae8bad2c99f/id-preview-0a585ea2--b4f16d78-9679-4b1b-b861-47b1c911e64e.lovable.app-1785896465864.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/168cee28-fd5f-4723-b550-1ae8bad2c99f/id-preview-0a585ea2--b4f16d78-9679-4b1b-b861-47b1c911e64e.lovable.app-1785896465864.png" },
     ],
     links: [
       {

@@ -32,11 +32,11 @@ export const Route = createFileRoute("/")({
         content:
           "Estudio freelance en Melo, Cerro Largo. Diseñamos sitios web profesionales, rápidos y a medida para pequeñas y medianas empresas uruguayas.",
       },
-      { property: "og:title", content: "Valcora Studio — Sitios web con IA para pymes" },
+      { property: "og:title", content: "Valcora Studio — Sitios web con IA para pymes en Uruguay" },
       {
         property: "og:description",
         content:
-          "Sitios web profesionales para tu negocio, hechos con IA. Planes desde USD 350, entrega rápida y atención directa.",
+          "Estudio freelance en Melo, Cerro Largo. Diseñamos sitios web profesionales, rápidos y a medida para pequeñas y medianas empresas uruguayas.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
