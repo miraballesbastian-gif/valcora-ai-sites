@@ -137,7 +137,7 @@ function LaptopMockup({ src, label }: { src: string; label: string }) {
           <span className="h-2 w-2 rounded-full bg-sand/40" />
           <span className="h-2 w-2 rounded-full bg-sand/25" />
         </div>
-        <div className="aspect-[16/10] w-full overflow-hidden rounded-t-md bg-secondary">
+        <div className="w-full overflow-hidden rounded-t-md bg-secondary">
           <video
             src={src}
             autoPlay
@@ -146,7 +146,7 @@ function LaptopMockup({ src, label }: { src: string; label: string }) {
             playsInline
             preload="metadata"
             aria-label={`Demo del sitio ${label}`}
-            className="h-full w-full object-cover"
+            className="h-auto w-full object-contain"
           />
         </div>
       </div>
