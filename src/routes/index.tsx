@@ -403,6 +403,13 @@ function Index() {
               ref={formRef}
               onSubmit={(e) => {
                 e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                const nombre = String(formData.get("nombre") ?? "").trim();
+                const contacto = String(formData.get("contacto") ?? "").trim();
+                const plan = String(formData.get("plan") ?? "").trim();
+                const mensaje = String(formData.get("mensaje") ?? "").trim();
+                const text = `Hola, quiero más información sobre los planes de Valcora Studio.\nNombre: ${nombre}\nContacto: ${contacto}\nPlan de interés: ${plan || "No especificado"}\nMensaje: ${mensaje}`;
+                window.open(`https://wa.me/59894233657?text=${encodeURIComponent(text)}`, "_blank");
                 toast.success("¡Consulta enviada! Te respondemos a la brevedad.");
                 formRef.current?.reset();
                 setPlan("");
