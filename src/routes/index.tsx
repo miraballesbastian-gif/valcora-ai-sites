@@ -269,6 +269,32 @@ function Index() {
                 </li>
               ))}
             </ul>
+            <DropdownMenu open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Abrir menú de navegación"
+                  className="rounded-full text-foreground lg:hidden"
+                >
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="end"
+                sideOffset={10}
+                className="w-56 rounded-2xl border-border bg-card p-2 shadow-lift"
+              >
+                {NAV.map((n) => (
+                  <DropdownMenuItem key={n.id} asChild className="rounded-xl px-4 py-3 text-sm font-medium">
+                    <a href={`#${n.id}`} onClick={() => setMobileMenuOpen(false)}>
+                      {n.label}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a
               href={WA_LINK}
               target="_blank"
