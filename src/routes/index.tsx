@@ -18,6 +18,9 @@ import logo from "@/assets/valcora-logo.png.asset.json";
 import refugioVideo from "@/assets/Refugio-Verde-Final.mp4.asset.json";
 import costaVideo from "@/assets/Hotel-CostaSerena-Final.mp4.asset.json";
 import fuegoVideo from "@/assets/Fuego-urbano-demo.mp4.asset.json";
+import raicesVideo from "@/assets/Raices-Inmobiliaria-Demo.mp4.asset.json";
+import vergaraVideo from "@/assets/Estudio-Vergara-Demo.mp4.asset.json";
+import costaDoradaVideo from "@/assets/Costa-Dorada-Demo.mp4.asset.json";
 
 const WA_MSG = "Hola, quiero más información sobre los planes de Valcora Studio";
 const WA_LINK = `https://wa.me/59894233657?text=${encodeURIComponent(WA_MSG)}`;
