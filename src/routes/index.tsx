@@ -2,18 +2,26 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Check,
-  MessageCircle,
   Facebook,
+  HeartHandshake,
   MapPin,
-  Zap,
+  Menu,
+  MessageCircle,
   Sparkles,
   Users,
-  HeartHandshake,
+  Zap,
   ArrowUpRight,
 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import logo from "@/assets/valcora-logo.png.asset.json";
 import refugioVideo from "@/assets/Refugio-Verde-Final.mp4.asset.json";
 import costaVideo from "@/assets/Hotel-CostaSerena-Final.mp4.asset.json";
@@ -214,6 +222,7 @@ function LaptopMockup({
 function Index() {
   const [scrolled, setScrolled] = useState(false);
   const [plan, setPlan] = useState("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
@@ -260,6 +269,32 @@ function Index() {
                 </li>
               ))}
             </ul>
+            <DropdownMenu open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+              <DropdownMenuTrigger asChild>
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Abrir menú de navegación"
+                  className="rounded-full text-foreground lg:hidden"
+                >
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent
+                align="end"
+                sideOffset={10}
+                className="w-56 rounded-2xl border-border bg-card p-2 shadow-lift"
+              >
+                {NAV.map((n) => (
+                  <DropdownMenuItem key={n.id} asChild className="rounded-xl px-4 py-3 text-sm font-medium">
+                    <a href={`#${n.id}`} onClick={() => setMobileMenuOpen(false)}>
+                      {n.label}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
             <a
               href={WA_LINK}
               target="_blank"
