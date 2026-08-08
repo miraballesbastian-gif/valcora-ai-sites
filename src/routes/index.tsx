@@ -92,6 +92,42 @@ const PROJECTS = [
       "Link a Instagram",
     ],
   },
+  {
+    name: "Raíces Inmobiliaria",
+    sector: "Inmobiliaria — casas, apartamentos y terrenos",
+    video: raicesVideo.url,
+    features: [
+      "Filtros de búsqueda por operación (venta/alquiler), tipo de propiedad y zona",
+      "Fichas de propiedades con precio, ubicación, m² y ambientes",
+      "Formulario de tasación gratuita con datos de la propiedad",
+      'Sección "cómo trabajamos" en 4 pasos',
+      "Mapa de zonas de cobertura integrado (Montevideo, Canelones, Maldonado)",
+    ],
+  },
+  {
+    name: "Estudio Vergara & Asociados",
+    sector: "Estudio contable y jurídico",
+    video: vergaraVideo.url,
+    features: [
+      "Seis áreas de servicio (contable, laboral, societario, sucesiones, consultoría financiera, gestoría)",
+      "Presentación del equipo profesional con foto y especialidad",
+      "Sistema de reserva de turnos por área, día y horario",
+      "Formulario de consulta general con selector de área de interés",
+      "Mapa de ubicación y datos de contacto (WhatsApp, dirección, horarios)",
+    ],
+  },
+  {
+    name: "Costa Dorada Eventos",
+    sector: "Salón de fiestas y eventos",
+    video: costaDoradaVideo.url,
+    features: [
+      "Consulta rápida de disponibilidad de fecha por tipo de evento",
+      "Secciones por tipo de festejo (15 años, bodas, familiares) con detalle de servicios",
+      "Galería de fotos filtrable por categoría",
+      "Cotizador express en 3 pasos que arma el mensaje y lo manda directo a WhatsApp",
+      "Preguntas frecuentes y mapa de ubicación en Salinas",
+    ],
+  },
 ];
 
 const PLANS = [
