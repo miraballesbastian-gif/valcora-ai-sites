@@ -222,6 +222,7 @@ function LaptopMockup({
 function Index() {
   const [scrolled, setScrolled] = useState(false);
   const [plan, setPlan] = useState("");
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
