@@ -2,18 +2,26 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Check,
-  MessageCircle,
   Facebook,
+  HeartHandshake,
   MapPin,
-  Zap,
+  Menu,
+  MessageCircle,
   Sparkles,
   Users,
-  HeartHandshake,
+  Zap,
   ArrowUpRight,
 } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
+import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import logo from "@/assets/valcora-logo.png.asset.json";
 import refugioVideo from "@/assets/Refugio-Verde-Final.mp4.asset.json";
 import costaVideo from "@/assets/Hotel-CostaSerena-Final.mp4.asset.json";
