@@ -18,6 +18,9 @@ import logo from "@/assets/valcora-logo.png.asset.json";
 import refugioVideo from "@/assets/Refugio-Verde-Final.mp4.asset.json";
 import costaVideo from "@/assets/Hotel-CostaSerena-Final.mp4.asset.json";
 import fuegoVideo from "@/assets/Fuego-urbano-demo.mp4.asset.json";
+import raicesVideo from "@/assets/Raices-Inmobiliaria-Demo.mp4.asset.json";
+import vergaraVideo from "@/assets/Estudio-Vergara-Demo.mp4.asset.json";
+import costaDoradaVideo from "@/assets/Costa-Dorada-Demo.mp4.asset.json";
 
 const WA_MSG = "Hola, quiero más información sobre los planes de Valcora Studio";
 const WA_LINK = `https://wa.me/59894233657?text=${encodeURIComponent(WA_MSG)}`;
@@ -87,6 +90,42 @@ const PROJECTS = [
       "Pedidos directos por WhatsApp",
       "Horario de atención visible",
       "Link a Instagram",
+    ],
+  },
+  {
+    name: "Raíces Inmobiliaria",
+    sector: "Inmobiliaria — casas, apartamentos y terrenos",
+    video: raicesVideo.url,
+    features: [
+      "Filtros de búsqueda por operación (venta/alquiler), tipo de propiedad y zona",
+      "Fichas de propiedades con precio, ubicación, m² y ambientes",
+      "Formulario de tasación gratuita con datos de la propiedad",
+      'Sección "cómo trabajamos" en 4 pasos',
+      "Mapa de zonas de cobertura integrado (Montevideo, Canelones, Maldonado)",
+    ],
+  },
+  {
+    name: "Estudio Vergara & Asociados",
+    sector: "Estudio contable y jurídico",
+    video: vergaraVideo.url,
+    features: [
+      "Seis áreas de servicio (contable, laboral, societario, sucesiones, consultoría financiera, gestoría)",
+      "Presentación del equipo profesional con foto y especialidad",
+      "Sistema de reserva de turnos por área, día y horario",
+      "Formulario de consulta general con selector de área de interés",
+      "Mapa de ubicación y datos de contacto (WhatsApp, dirección, horarios)",
+    ],
+  },
+  {
+    name: "Costa Dorada Eventos",
+    sector: "Salón de fiestas y eventos",
+    video: costaDoradaVideo.url,
+    features: [
+      "Consulta rápida de disponibilidad de fecha por tipo de evento",
+      "Secciones por tipo de festejo (15 años, bodas, familiares) con detalle de servicios",
+      "Galería de fotos filtrable por categoría",
+      "Cotizador express en 3 pasos que arma el mensaje y lo manda directo a WhatsApp",
+      "Preguntas frecuentes y mapa de ubicación en Salinas",
     ],
   },
 ];
