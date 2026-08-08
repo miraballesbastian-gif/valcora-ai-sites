@@ -55,7 +55,15 @@ const NAV = [
   { id: "contacto", label: "Contacto" },
 ];
 
-const PROJECTS = [
+type Project = {
+  name: string;
+  sector: string;
+  video: string;
+  videoFit?: "cover" | "contain";
+  features: string[];
+};
+
+const PROJECTS: Project[] = [
   {
     name: "Refugio Verde",
     sector: "Hotel, cabañas y camping",
@@ -96,6 +104,7 @@ const PROJECTS = [
     name: "Raíces Inmobiliaria",
     sector: "Inmobiliaria — casas, apartamentos y terrenos",
     video: raicesVideo.url,
+    videoFit: "contain",
     features: [
       "Filtros de búsqueda por operación (venta/alquiler), tipo de propiedad y zona",
       "Fichas de propiedades con precio, ubicación, m² y ambientes",
@@ -167,7 +176,15 @@ const WHY = [
   { icon: HeartHandshake, title: "Atención directa", text: "Hablás siempre con quien hace el trabajo." },
 ];
 
-function LaptopMockup({ src, label }: { src: string; label: string }) {
+function LaptopMockup({
+  src,
+  label,
+  fit = "cover",
+}: {
+  src: string;
+  label: string;
+  fit?: "cover" | "contain" | undefined;
+}) {
   return (
     <div className="w-full">
       <div className="rounded-t-xl border border-border bg-ink p-2 pb-0 sm:p-3 sm:pb-0">
@@ -185,7 +202,7 @@ function LaptopMockup({ src, label }: { src: string; label: string }) {
             playsInline
             preload="metadata"
             aria-label={`Demo del sitio ${label}`}
-            className="h-full w-full object-cover"
+            className={`h-full w-full ${fit === "contain" ? "object-contain" : "object-cover"}`}
           />
         </div>
       </div>
@@ -315,7 +332,7 @@ function Index() {
                   <span className="mb-4 inline-flex w-fit items-center rounded-full bg-secondary px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
                     Proyecto conceptual — no afiliado
                   </span>
-                  <LaptopMockup src={p.video} label={p.name} />
+                  <LaptopMockup src={p.video} label={p.name} fit={p.videoFit} />
                   <div className="mt-6">
                     <h3 className="text-xl font-bold">{p.name}</h3>
                     <p className="mt-1 text-sm text-primary">{p.sector}</p>
